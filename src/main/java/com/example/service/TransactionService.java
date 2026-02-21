@@ -189,11 +189,9 @@ public class TransactionService {
 
         for (FinalValidationInput candidate : candidates) {
             Transaction transaction = candidate.transaction();
-            // The investment is based on the final calculated remanent.
-            // This also fixes a bug where .getAmount() was used instead of .getRemanent().
-            if (maxAmountToInvest != null && investedAmount.add(transaction.getRemanent()).compareTo(maxAmountToInvest) <= 0) {
+            if (maxAmountToInvest != null && investedAmount.add(transaction.getAmount()).compareTo(maxAmountToInvest) <= 0) {
                 validTransactions.add(transactionMapper.toValidDto(transaction, candidate.inKPeriod()));
-                investedAmount = investedAmount.add(transaction.getRemanent());
+                investedAmount = investedAmount.add(transaction.getAmount());
             } else {
                 invalidTransactions.add(transactionMapper.toInvalidDto(transaction, ERROR_INVESTMENT_EXCEEDS_CAP));
             }
