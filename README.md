@@ -287,3 +287,8 @@ The project includes a comprehensive suite of unit and integration tests. To run
 ```
 
 A detailed test report will be generated in `build/reports/tests/test/index.html`.
+
+# Submission information
+- Docker image name is: `blk-hacking-ind-pratyaksha-jha:latest`, [docker-hub-link](https://hub.docker.com/repository/docker/pratyakshajha/blk-hacking-ind-pratyaksha-jha)
+- This can be run by: `docker run -p 5477:5477 pratyakshajha/blk-hacking-ind-pratyaksha-jha:latest`
+- Demo recording is at: [link](https://drive.google.com/file/d/1OQd2dhcXVtgMAxizCKEyO4MWR4vRzR5Z/view?usp=sharing)
