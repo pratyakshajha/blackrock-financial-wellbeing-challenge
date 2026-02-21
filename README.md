@@ -234,6 +234,9 @@ All endpoints are relative to the base URL: `http://localhost:5477/blackrock/cha
 
 The project includes a `Dockerfile` for easy containerization.
 
+Note: my particular image name is: `blk-hacking-ind-pratyaksha-jha:latest`
+This can be run by: `docker run -p 5477:5477 pratyakshajha/blk-hacking-ind-pratyaksha-jha:latest`
+
 ### 1. Build the Docker Image
 
 Ensure you have built the project first (`./gradlew build`). Then, run the following command to build the Docker image.
@@ -250,9 +253,6 @@ Run the container locally, mapping the application port to your host machine.
 ```sh
 docker run -p 5477:5477 your-dockerhub-username/blk-hacking-ind-{name-lastname}
 ```
-
-Note: my particular image name is: `blk-hacking-ind-pratyaksha-jha:latest`
-This can be run by: `docker run -p 5477:5477 pratyakshajha/blk-hacking-ind-pratyaksha-jha:latest`
 
 The application will be accessible at `http://localhost:5477/blackrock/challenge/v1/`.
 
