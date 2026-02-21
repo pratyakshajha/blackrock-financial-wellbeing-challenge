@@ -18,7 +18,7 @@ The application is fully containerized with Docker, making it easy to build, run
 ## Technologies Used
 
 - **Language**: Java 17+
-- **Framework**: Spring Boot 3.2.6
+- **Framework**: Spring Boot 4.0.3
 - **Build Tool**: Gradle
 - **Libraries**:
   - Spring Web (for REST APIs)
